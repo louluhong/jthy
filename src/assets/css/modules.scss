@@ -1,0 +1,26 @@
+@import 'base.scss';
+@import 'register.scss';
+@import 'qianyue.scss';
+@import 'jiating.scss';
+@import 'chat.scss';
+@import 'me.scss';
+@import 'base_components.scss';
+@import 'signAdmin.scss';
+@import 'adminDetails.scss';
+@import 'authentication.scss';
+@import 'Photograph.scss';
+@import 'playok.scss';
+@import 'successFail.scss';
+@import 'addressSelect.scss';
+@import 'onlineQy.scss';
+@import 'bady.scss';
+@import 'wenzhen.scss';
+@import 'rzindex.scss';
+._full_router {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}

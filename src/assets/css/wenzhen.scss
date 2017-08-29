@@ -1,0 +1,116 @@
+@import 'base_common.scss';
+// 发起问诊
+.wz_chatinfo_con{
+	height: auto;
+	width:100%;
+	font-family: 'PingFangSC-Regular';
+	overflow: hidden;
+	.wz_con{
+		.wz_symptom,.wz_describe{
+			width:100%;
+			height: size(54);
+			background: #fff;
+			text-align: left;
+			margin-bottom: size(1);
+			.symptom_title,.describe_title{
+				@include font-dpr(16px);
+				color: #666;
+				height: size(22);
+				line-height: size(22);
+				margin-top: size(16);
+				margin-left: size(20);
+				margin-right: size(14);
+				display: inline-block;
+				float: left;
+			}
+			.symptom_title_text,.describe_title_text{
+				width: size(280);
+				height: size(20);
+				border: none;
+				@include font-dpr(13px);
+				line-height: size(20);
+				margin-top: size(16);
+				color: #b2b2b2;
+				display: inline-block;
+				float: left;
+			}
+		}
+		.wz_describe{
+			height: size(72);
+			.describe_title{
+				margin-top: size(16);
+			}
+			.describe_title_text{
+				height: size(40);
+				line-height: size(20);
+				margin-top: size(14);
+				border:0;  
+			    background-color:transparent;  
+			    color: #b2b2b2;  
+			    height: auto;  
+			}
+		}
+		.wz_photo{
+			height: auto;
+			background: #fff;
+			width:100%;
+			padding-left: size(55);
+			padding-top: size(20);
+			.chat_img{
+				width: size(80);
+				height: size(80);
+				float: left;
+				margin:0 size(19) size(19) 0;
+			}
+		}
+		.wz_commit{
+			.wz_button{
+				width: size(350);
+				height: size(48);
+				background: #47A6F8;
+				border-radius:size(4);
+				display: block;
+				line-height: size(48);
+				margin: size(19) auto 0;
+				@include font-dpr(17px);
+				color: #fff;
+			}
+		}
+		.wz_photo_mask{
+			display: none;
+			width:100%;
+			height: 100%;
+			.wz_photo_k{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width:100%;
+				background: #f6f6f6;
+			}
+			.wz_mask{
+				background: rgba(51,51,51,0.5);
+				width:100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				text-indent: -9999em;
+			}
+			.wz_photo_camera,.wz_photo_pic,.wz_photo_hide{
+				width:100%;
+				height: size(50);
+				background: #fff;
+				margin-bottom: size(1);
+				position: relative;
+				z-index: 2;
+				line-height: size(50);
+				@include font-dpr(16px);
+				color: #666;
+			}
+			.wz_photo_hide{
+				margin-top:size(5);
+			}
+		}
+	}
+}

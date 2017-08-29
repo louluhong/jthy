@@ -1,0 +1,27 @@
+#successFail{font-family: 'PingFangSC-Regular';}
+.successFail_box{width:95%;margin: 0 auto;}
+.successFail_icon{width:100%;height: size(133);border-bottom: size(0.5) solid #e5e5e5;margin-bottom: size(15);}
+.successFail_icon i{display:block;font-style: normal;width:size(64);height: size(64);margin: size(20) auto;}
+.successFail_icon span{@include font-dpr(16px);color: #030303;}
+.sucessicon{background: url("../images/success@2x.png") no-repeat;background-size: 100% 100%;}
+.failicon{background: url("../images/fail@2x.png") no-repeat;background-size: 100% 100%;}
+.successFail_box .reason{line-height: size(25);@include font-dpr(16px);}
+.successFail_box .reason span,.successFail_box .reason i,.successFail_box .reason label{float: left;text-align: left;}
+.successFail_box .reason label{color: #666;margin-right: size(25);}
+.successFail_box .reason i{width:size(13);height:size(13);background: url("../images/waring_red@2x.png") no-repeat;margin-top: size(7);margin-right: size(8);background-size: 100% 100%;}
+.successFail_box .reason span{color: #333;}
+.successFail_box .img_list{margin-top: size(27);}
+.successFail_box .img_list li{width:size(165);height: size(150);position: relative;float: left;margin:size(10) size(7) 0 size(6);border-radius: size(4);}
+
+.successFail_box .img_list li img{display: block;width:100%;height: 100%;border-radius: size(4);}
+.successFail_box .img_list li .promptMsg{position: absolute;left: 50%;top: 50%;margin-left:size(-40);margin-top:size(-14);width:size(80);height: size(28);line-height: size(28);text-align: center;color: #fff;border-radius: 100px;background:rgba(0,0,0,0.7);@include font-dpr(14px);filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');background:rgba(0,0,0,0.5);}
+.successFailSubmit{display:block;width:100%;height: size(48);background:#FF7B35;color: #fff;@include font-dpr(17px);margin-top:size(60);border:none;border-radius: size(4);}
+
+
+
+
+
+
+
+
+

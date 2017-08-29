@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+mesrc.rar
+newdist.rar
+newsrc.rar
+newupsrc.rar
+src.rar
+src1.rar

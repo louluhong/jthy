@@ -1,0 +1,9 @@
+/*选择城市*/
+#addressSelect{font-family: 'PingFangSC-Regular';text-align: left;}
+#addressSelect .header{width:100%;height:size(50);background: #fff;line-height: size(50);padding:0 size(12);box-sizing: border-box;}
+#addressSelect .header span,#addressSelect .header label{float:left;}
+#addressSelect .header span{@include font-dpr(16px);color: #47A6F8;margin-right: size(1);}
+#addressSelect .header label{@include font-dpr(14px);color: #999;}
+#addressSelect .mint-indexlist-nav{ border: 0 none;background: none;}
+#addressSelect .mint-cell{height:size(50);}
+#addressSelect .mint-indexsection-index{padding:5px;}

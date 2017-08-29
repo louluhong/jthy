@@ -1,0 +1,553 @@
+@import 'base_common.scss';
+/*当没有宝宝的时候添加宝宝页面*/
+.badybox{
+    height: 100%;
+    background: #fff;
+}
+.ymjz_addbaby{
+    width:100%;
+    height:100%;
+    background:#f6f6f6;
+    .nobady{
+        display: block;
+        width:size(140);
+        height:size(92);
+        margin: size(78) auto 0;
+    }
+    .nobadytext{
+        display: block;
+        width:100%;
+       line-height: size(25);
+       text-align: center;
+       margin: size(20) 0 size(45);
+       color: #63708F;
+       @include font-dpr(16px);
+    }
+    .addbady_btn{
+        width:size(210);
+        height: size(48);
+        line-height: size(48);
+        color: #fff;
+        @include font-dpr(16px);
+        background: #47A6F8;
+        margin: 0 auto size(18);
+        border-radius: size(4);
+        span{
+            float:left;
+        }
+        .addicon{
+            @include font-dpr(30px);
+            margin:0 size(5) 0 size(50);
+        } 
+         
+    } 
+    
+}
+.lookAllym{
+   text-align: center;
+    color: #47A6F8;
+    @include font-dpr(14px);
+    line-height: size(20);
+    span,img{
+        display: inline-block;
+    }
+    img{
+        width:size(14);
+        height:size(14);
+       vertical-align: middle;
+       margin-top:size(-2);
+    }
+}
+
+/*修改宝宝信息页面*/
+.modifybadyinfo{
+    width:100%;
+    height:100%;
+    background:#f6f6f6;
+    padding-top: size(10);
+    text-align: left;
+    .modifybadyinfo_list{
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: size(12);
+        li{
+            position: relative;
+            width:100%;
+            height: size(60);
+            line-height: size(60);
+            @include font-dpr(16px);
+            color: #666;
+            border-bottom: 1px solid #e5e5e5;
+            label{
+                display: inline-block;
+                width:size(76);
+                margin-right: size(15);  
+            }
+            input{
+                border:none; 
+                 display: inline-block;
+                 width:size(230);
+                 @include font-dpr(16px);
+                  color: #B2B2B2;
+            }
+            span{
+                color: #B2B2B2;  
+            }
+            i{
+                position: absolute;
+                width:size(8);
+                height: size(14);
+                right:size(10);
+                top: size(26);
+                background: url("../images/bady_arrRight.png") no-repeat;
+                background-size: 100% 100%;
+                z-index: 1;
+            }
+            .sexImg{
+                display: inline-block;
+                width:size(40);
+                height:size(40);
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+           
+        }
+        li:last-child{
+            border:none;
+        }
+    }    
+  
+}
+.modifybadyinfo_btnOk{
+    display: block;
+    width:size(350);
+    height: size(48);
+    margin: size(50) auto 0;
+    border-radius: size(4);
+    background: #47A6F8;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    @include font-dpr(16px);
+}
+.bodyimg{
+        background: url("../images/smllbody.png") no-repeat;
+        background-size: 100% 100%;
+}
+.girlimg{
+    background: url("../images/smllgirl.png") no-repeat;
+     background-size: 100% 100%;
+}
+/*疫苗详情*/
+.ymxq{
+    background:#fff;
+    text-align: left;
+    padding: 0 size(12) size(10);
+    box-sizing: border-box;
+     @include font-dpr(14px);
+    .header_title{
+        width:100%;
+        height: size(68);
+        line-height: size(68);
+         @include font-dpr(20px);
+         color: #333;
+    }
+    .ymxq_content{
+        margin-bottom: size(24);
+        header{
+            height: size(25);
+            line-height: size(25);
+            i,span{
+                display: inline-block; 
+            }
+            i{
+                width:size(16);
+                height: size(16);
+               background:url("../images/ymxqoneicon.png") no-repeat;
+                background-size: 100% 100%;
+                vertical-align: middle;
+                margin:size(-4) size(8) 0 0;
+                
+            }
+            .icon2{
+                background:url("../images/ymxqtwoicon.png") no-repeat;
+                 background-size: 100% 100%;
+            }
+            .icon3{
+                background:url("../images/ymxqthreeicon.png") no-repeat;
+                 background-size: 100% 100%;
+            }
+            .icon4{
+                background:url("../images/ymxqfiveicon.png") no-repeat;
+                 background-size: 100% 100%;
+            }
+            .icon5{
+                background:url("../images/ymxqsixicon.png") no-repeat;
+                 background-size: 100% 100%;
+            }
+            span{
+                @include font-dpr(14px);
+                color: #999;
+            }
+            
+        }
+        p{
+            line-height: size(20);
+            color: #666;
+            margin-top: size(10);
+        }
+        
+    }
+}
+
+/*预防接种有宝宝记录的首页*/
+.ymjzindexhave{
+    height:100%;
+    background:#fff;
+    text-align: left;
+    .header{
+        width:100%;
+        height:size(140);
+        background: url("../images/badyindex_bg.png") repeat-x;
+        background-size: 100% 100%;
+        padding-top: size(33);
+        box-sizing: border-box;
+        overflow: hidden;
+        ul{
+            width:1000%;
+            li{
+                position: relative;
+                float: left;
+                margin-left:size(16);
+                .ymjzindexhave_img{
+                    display: block;
+                    width:size(40);
+                    height:size(40);
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                .ymjzindexhave_img.active{
+                    transform:scale(1.3,1.3);
+                 }
+                i{display: block;
+                    width:size(40);
+                    height:size(40);
+                    background: url("../images/badyaddicon.png") no-repeat;
+                    background-size: 100% 100%;
+                }
+                .ymjzindexhave_text{
+                    display: none;
+                    position: absolute;
+                    left:size(-8);
+                    top: size(60);
+                    width:size(150);
+                    color: #fff;
+                     @include font-dpr(16px);
+                    .num{
+                         @include font-dpr(14px);
+                    }
+                }
+                .ymjzindexhave_text.show{
+                    display: block;
+                }
+                .arr{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    bottom: size(-68);
+                    width:size(50);
+                    height: size(17);
+                    img{
+                        display: block;
+                        width:size(50);
+                        height: size(17);
+                    }
+                }
+                .arr.arrshow{
+                    display: block;
+                }
+                
+                
+            }
+        }
+    } 
+    .content{
+        width:100%;
+        box-sizing: border-box;
+        padding: size(48) 0;
+        background: #fff;
+        .Progressbar{
+            margin-bottom: size(50);
+            .Progressbar_img{
+                position: relative;
+                width:220px;
+                margin: 0 auto;
+                background-size:100% 100% ;
+                .dataTips{
+                    position: absolute;
+                    left:0;
+                    top:size(25);
+                    width:100%;
+                    margin:0 auto;
+                    padding-top: size(5);
+                    box-sizing: border-box;
+                    text-align: center;
+                    font-size:14px ;
+                    color: #999;
+                    .datanum{
+                        border-bottom: 1px solid #D1D7E7;
+                        width:size(145);
+                        margin: size(5) auto;
+                        padding-bottom: size(5);
+                        span{
+                            display: inline-block;
+                            font-family: PingFangSC-Semibold;
+                             @include font-dpr(14px); 
+                            color: #999;
+                        }
+                        .tian{
+                           @include font-dpr(60px); 
+                           color: #333;
+                        }
+                    }
+                    span{
+                        display: block;
+                    }
+                    .datatime{
+                        color: #47A6F8;
+                    }
+                }
+                
+            }
+            
+        }
+        .ymname{
+            position: relative;
+            width:80%;
+            margin: 0 auto;
+            border-radius: size(4);
+            box-shadow: 0 4px 12px 0 rgba(230,242,254,0.90);
+            li{
+               @include font-dpr(16px);
+                color: #333333;
+                line-height: size(50);
+                i{
+                    float: left;
+                    width:size(16);
+                    height: size(16);
+                    background: url('../images/icon_ymlist2x.png') no-repeat;
+                    margin: size(15) size(12);
+                    background-size:100% 100% ;
+                }
+            }
+           .arr{
+               position: absolute;
+               right: 0;
+               top: 50%;
+               width:size(10);
+               height: size(15);
+               margin-top:size(-7);
+               margin-right: size(10);
+               background:url('../images/ic_next@2x.png') no-repeat;
+               background-size:100% 100% ;
+           }
+           
+        }
+        
+    }
+    
+      
+}
+#container {
+  width:200px;
+  margin:0 auto;
+  padding-top: size(30);
+  box-sizing: border-box;
+}
+.Progressbar_text{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-30px;
+    margin-top:0px;
+    span{
+         @include font-dpr(60px);
+        color: #333;
+    }
+    label{
+         @include font-dpr(14px);
+        color: #999;
+    }
+}
+
+
+/*疫苗详情列表*/
+.ymxqlist{
+    height:100%;
+    background:#f6f6f6;
+    text-align: left;
+    .header_nav{
+        background: #fff;
+         border-bottom: 1px solid #E5E5E5;
+        .nav{
+            height: size(50);
+            width: size(265);
+            margin:0 auto;
+            line-height: size(45);
+            box-sizing: border-box;
+           span{
+               display: inline-block;
+               margin-right: size(50);
+               color: #333;
+               @include font-dpr(15px);
+              
+           }
+           span:last-child{
+               margin: 0;
+               
+           }
+           .spanBorder{
+                border-bottom: 1px solid #47A6F8;
+           }
+           
+        }
+    }
+    .select_arr{
+      position: absolute;
+      right: 0;
+      top:0;
+      width:size(60);
+      height: size(50);
+     padding:size(22);
+     box-sizing: border-box;
+        i{
+            display: block;
+            width:size(8);
+            height: size(5);
+            background: url("../images/Triangle2@2x.png") no-repeat;
+            background-size: 100% 100%;
+            
+        }
+    }
+   .mouthlist{
+       position: absolute;
+       left: 0;
+       top:size(51);
+       background:#fff;
+       width:100%;
+       z-index: 100;
+       .mouthlist_box{
+           width:size(365);
+           margin:0 auto;
+       }
+       li{
+           display: inline-block;
+           width:size(60);
+           height: size(30);
+           margin:size(10) size(15);
+           text-align: center;
+           line-height: size(30);
+           background: #F7F7F7;
+           border-radius: size(4);
+            @include font-dpr(16px);
+            color: #666;
+       }
+       .bgcolor{
+           background: #47A6F8;
+           color: #fff;
+       }
+   } 
+   .ymxqlist_content{
+       
+       li{
+           width:100%;
+           margin-top: size(10);
+           background: #fff;
+           border-bottom: 1px solid #e5e5e5;
+           .time_tips{
+               padding: size(15) 0;
+               box-sizing: border-box;
+               span{
+                   display: block;
+                   width:size(180);
+                   height: size(28);
+                   color: #47A6F8;
+                    @include font-dpr(14px);
+                    margin:0 auto;
+                    line-height: size(28);
+                    text-align: center;
+                    border:1px solid #47A6F8;
+                    border-radius: size(100);
+               }
+           }
+           .ym_list{
+               position: relative;
+               height: size(50);
+               padding: size(10) size(20);
+              img{
+                  float: left;
+                  width:size(40);
+                  height: size(40);
+                  border-radius: 50%;
+                  margin-right: size(10);
+              }
+              .ym_list_content{
+                  float: left;
+                  .text{
+                      label{
+                           @include font-dpr(16px);
+                           color: #333;
+                      }
+                      span{
+                          @include font-dpr(14px);
+                           color: #666;
+                      }
+                  }
+                  .num{
+                      @include font-dpr(14px);
+                      color: #999;
+                  }
+              }
+           }
+           .arr{
+               position: absolute;
+               right:size(10);
+               top:size(30);
+               width:size(8);
+               height: size(14);
+               background: url("../images/ic_next@2x.png") no-repeat;
+               background-size:100% 100%;
+           }
+           
+           
+       }        
+       
+   } 
+    
+    
+}
+
+/*日期插件样式*/
+.ym_roll>div, .date_roll>div, .datetime_roll>div, .time_roll>div{
+    font-size: size(22)!important;
+}
+.ym_roll, .date_roll, .datetime_roll, .time_roll{
+    font-weight: 400!important;
+}
+.date_ctrl{
+    color: #333!important;
+}
+
+/*宝宝超过6周岁*/
+.overbady{
+    width:100%;
+    height: 100%;
+    background: #fff;
+    //padding-bottom: size();
+    .overbady_img{
+        display: block;
+        width:size(180);
+        height:size(124);
+        margin: 0 auto size(28);
+    }
+}

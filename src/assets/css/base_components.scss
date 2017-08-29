@@ -1,0 +1,58 @@
+@import 'base_common.scss';
+span.checkitems{
+	display: inline-block;
+	padding: 0.16rem 0.4rem;
+	border-radius:2.67rem;
+	@include font-dpr(14px);
+	color:#999999;
+	background:#f2f2f2;
+}
+span.checkitems.selected{
+	color:#47a6f8;
+	background: rgba(28,152,252,0.10);
+}
+
+.radiocheck-div{
+	text-align: left;
+	vertical-align: center;
+	.radiocheck-item{
+		display: inline-block;
+		margin-right: 1.01rem;
+		@include font-dpr(16px);
+		input{
+			display: none;
+		}
+		.radiocheck-icon{
+			display: inline-block;
+			width: 0.53rem;
+			height: 0.53rem;
+			border-radius: 0.53rem;
+			border:1px solid #c3c9d5;
+		}
+		.radiocheck-icon.isselected{
+			background:#47a6f8;
+			position: relative;
+			border: 1px solid #47a6f8;
+			&:after{
+				border: 0.06rem solid transparent;
+    border-left: 0;
+    border-top: 0;
+    content: " ";
+    top: 0.10rem;
+    left: 0.18rem;
+    position: absolute;
+    width: 0.11rem;
+    height: 0.21rem;
+    -webkit-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    border-color: #fff;
+    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+			}
+		}
+	}
+}

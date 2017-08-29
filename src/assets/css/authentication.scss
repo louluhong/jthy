@@ -1,0 +1,16 @@
+#authentication{font-family: 'PingFangSC-Regular';}
+.authentication_header{width:100%;height: size(40);background: #ffedd1;line-height: size(40);margin-bottom: size(4);}
+.authentication_header i,.authentication_header span{display: inline-block;color: #FF7B35;@include font-dpr(14px);}
+.authentication_header i{width:size(17);height: size(15);background: url("../images/loudspeaker@2x.png") no-repeat;vertical-align: middle;margin-right: size(7);background-size: 100% 100%;margin-top: size(-3);}
+.authentication_box{width:95%;margin: 0 auto;}
+.authentication_box a{float: left;width:size(165);height: size(150);margin: size(15) size(10) 0 size(3);padding-top: size(13);box-sizing: border-box;}
+.authentication_box a span{color: #fff;@include font-dpr(14px);}
+.authentication_box .just_sfz{background: url("../images/bg_faceofcard@2x.png") no-repeat;background-size: 100% 100%;}
+.authentication_box .back_sfz{background: url("../images/bg_theothersideofcard@2x.png") no-repeat;background-size: 100% 100%;}
+.authentication_box .sc_sfz{background: url("../images/Rectangle@2x.png") no-repeat;background-size: 100% 100%;}
+.authentication_submitOk{width:95%;height: size(48);border:none;background: #dddddd;border-radius: size(4);color: #fff;@include font-dpr(17px);margin-top: size(88);}
+
+
+
+
+

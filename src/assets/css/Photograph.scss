@@ -1,0 +1,11 @@
+#Photograph{font-family: 'PingFangSC-Regular';padding-top: size(33);background: #47A6F8;width:100%;height: 100%;text-align: left;height: 100%;}
+.Photograph_box{width:90%;margin: 0 auto;height: 100%;}
+.Photograph_box img{margin-bottom: size(17);width:100%;}
+.Photograph_tips{}
+.Photograph_tips .icon,.Photograph_tips p{display: inline-block;}
+.Photograph_tips .icon{width:size(13);height: size(13);background: url("../images/Combined sthip@2x.png") no-repeat;vertical-align: top;margin-top: size(5);background-size: 100% 100%;}
+.Photograph_tips p{line-height: size(22);color: #fff;width:85%;@include font-dpr(16px);margin-left: size(2);}
+.Photograph_tips p i{font-style: normal;color: #FFE152;}
+.palyPhoto,.toAlbum{width:100%;height: size(48);border-radius: size(4);@include font-dpr(16px);}
+.palyPhoto{border: size(1) solid #fff;color: #fff;margin-top:size(56);background: none;}
+.toAlbum{background: #fff;color: #47A6F8;margin-top: size(20);border:none;}

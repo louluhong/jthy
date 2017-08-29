@@ -1,0 +1,493 @@
+@import 'base_common.scss';
+// 消息
+.chat-con{
+	width: 100%;
+	height: 100%;
+	margin-top: size(10);
+	.chat-containernoinfo{
+		width: size(140);
+		height: size(140);
+		margin-top: size(129);
+	}
+}
+.chat_interrogation{
+	width: size(375);
+	height: size(75);
+	background: #fff;
+	margin-bottom: size(1);
+	.chat_left{
+		float: left;
+		width: size(50);
+		height: size(50);
+		margin: size(16) 0 0 size(16);
+		.chat_img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.chat_right{
+		width: size(299);
+		margin-left: size(10);
+		float: left;
+		text-align: left;
+		position: relative;
+		.chat_time{
+			color: #B2B2B2;
+			@include font-dpr(12px);  
+			position: absolute;  
+			right: 0.42667rem;
+    		top: size(13);
+		}
+		.chat_text{
+			display: block;
+			@include font-dpr(16px);
+			color: #333;
+			line-height: size(22);
+			height: size(22);
+			margin: size(13) 0 size(7) 0;
+		}
+		.xitong{
+			width: size(18);
+			height: size(18);
+			display: none;
+			background: red;
+			text-align: center;
+			line-height: size(18);
+			// text-indent: -9999em;
+			color: #fff;
+		}
+		.xiaoxi{
+			// width: size(7);
+			// height: size(7);
+			// display: none;
+			// background: red;
+			// // text-align: center;
+			// // line-height: size(18);
+			// text-indent: -9999em;
+			width: size(18);
+			height: size(18);
+			display: none;
+			background: red;
+			text-align: center;
+			line-height: size(18);
+			// text-indent: -9999em;
+			color: #fff;
+		}
+		.chat_spot{
+			border-radius: 50%;
+			position: absolute;
+			right: size(16);
+			top: size(40);
+			// color: #fff;
+		}
+		.chat_interrogation_con{
+			@include font-dpr(14px);
+			color: #666;
+			line-height: size(20);
+			height: size(20);
+		}
+	}
+}
+/* 个人中心 */
+.chat-container{
+        width: 100%;
+        height: 100%;
+}
+.chat-containerbody{
+	/*padding-top: 0.3rem;*/
+	padding-bottom: 1.33rem;
+	.chat_tab{
+		.chat_ul{
+			width: 100%;
+			height: size(50);
+			background: #fff;
+			margin-bottom: size(10);
+			.chat_li{
+				width: 50%;
+				height: size(21);
+				float: left;
+				margin-top: size(15);
+				color: #333;
+				@include font-dpr(15px);
+				span{
+					// width: size(70);
+					padding-bottom: size(5);
+					display: inline-block;
+					margin: 0 auto;
+				}
+				span.selected{					
+					border-bottom: size(2) solid #47A6F8;
+				}
+			}
+		}
+	}
+	.chat-containernoinfo{
+		margin-top: size(127);
+		width:size(142);
+		height:size(142);
+	}
+}
+.chat-containerbody .chat-containerbodyitem{
+	height:size(108);
+	width: 100%;
+	background: #fff;
+	position: relative;
+	border-bottom:1px solid #E5E5E5;
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_zt{
+	position: absolute;
+	top: 0.16rem;
+	right: size(12);
+	color:#b2b2b2;
+	@include font-dpr(14px);
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_zt.colorzt{
+	color: #47A6F8;
+}
+.chat-containerbodyitem_poin{
+	min-width: size(25);
+	min-height: size(25);
+	background: #FF553C;
+	border-radius: 50%;
+	@include font-dpr(12px);
+	color: #fff;
+	position: absolute;
+	top: size(55);
+	right: size(16);
+	display: block;
+	// padding:size(3) size(6);
+	// padding: size(5);
+	line-height: size(25);
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_date{
+	position: absolute;
+	top: size(45);
+	left:1.79rem;
+	color: #999;
+	@include font-dpr(14px);
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_type{
+	position: absolute;
+	top:size(15);
+	left: 1.79rem;
+	color:#333333;
+	@include font-dpr(16px);
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_content{
+	position: absolute;
+	top:size(72);
+	left: 1.79rem;
+	width:size(300);
+	color:#666666;
+	@include font-dpr(14px);
+	@include text-ellipsis();
+	text-align: left;
+}
+.chat-containerbody .chat-containerbodyitem .chat-containerbodyitem_img{
+	position: absolute;
+	top:size(19);
+	left: 0.19rem;
+	width: 1.36rem;
+	height:1.36rem;
+	border-radius: 50%;
+}
+.chat-containerbody .chat-containerbodyitem i{
+	width: 0.16rem;
+	height: 0.16rem;
+	background:#ff553c;
+	display: inline-block;
+	border-radius: 0.08rem;
+	position: absolute;
+	top: 1.04rem;
+	right: 0.51rem;
+}
+
+/* 聊天详细信息 */
+.wz_finish{
+	color: #333;
+	@include font-dpr(16px);
+	background: #fff;
+	width: 100%;
+	height: size(54);
+	line-height: size(54);
+	text-align: center;
+}
+.zz_dot_wait{
+	background: #eee;
+	color: #999;
+	@include font-dpr(14px);
+	padding: size(12) size(20);
+	// width: size(246);
+	display: inline-block;
+	margin:0 auto;
+	border-radius: size(4);
+}
+.chatdetail-containerbody .wz_d{
+	width: size(3);
+	height: size(3);
+	border-radius: 50%;
+	background: #E0B35D;
+	display: inline-block;
+	position: relative;
+	top: size(-5);
+	margin-right: size(5);
+}
+.chatdetail-containerbody .zz_title{
+	margin-bottom: size(6);
+	display: inline-block;
+}
+.chatdetail-container{
+        background: #f6f6f6;
+        overflow: hidden; 
+        height: 100%;
+        /* padding-bottom: 0.69rem; */
+}
+.chatdetail-containerbody{
+	overflow: auto;
+	/* padding-bottom: 0.69rem; */
+}
+#app{
+	.newimg_mask{
+    	width: 100%;
+    	height: 100%;
+    	background: rgba(0,0,0,0.5);
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 1;
+    }
+    .newimg_k{
+    	width:10rem;
+    	height: size(323);
+    	position: fixed;
+    	top: 50%;
+    	margin-top: size(-161);
+    	left:50%;
+    	margin-left: size(-187.5);
+    	z-index: 2;
+    }
+    .new_img{
+    	width: 100%;
+    }
+}
+.chatdetail-containerbody ul{
+
+	/* padding-bottom: 1rem; */
+}
+.chatdetail-containerbody li{
+    float: left;
+	//clear: both;
+	width: 100%;
+	padding-top: 0.69rem;
+	overflow: hidden;
+	text-align: center;
+}
+.chatdetail-containerbody li .chatdetail-containerbodyitemheader,.chatdetail-containerbodyitemcontent{
+	float: left;
+	margin: 0 size(16) 0 size(6);
+}
+.chatdetail-containerbody li .chatdetail-containerbodyitemcontent{
+	display: inline-block;
+	min-height: 0.67rem;
+	text-align: left;
+	line-height: 0.67rem;
+	border-radius:0.16rem;
+	@include font-dpr(16px);
+	padding: 0.21rem 0.35rem;
+	max-width: 6.5rem;
+	word-break: break-all;
+    word-wrap: break-word;
+    // .chatdetail-containerbodyitemcontent_img{
+    // 	// width: size(184);
+    // 	// height: size(132);
+    // 	width: 100%;
+    // }
+    // .chatdetail-containerbodyitemcontent_img_k{
+    // 	width: size(184);
+    // 	height: size(132);
+    // 	display: inline-block;
+    // }
+    img{
+    	width: size(184);
+    	height: size(132);
+    }
+    // img:after{
+    // 	content: url('../../assets/images/def.png');
+    // }
+
+
+}
+.chatdetail-containerbody li .chatdetail-containerbodyitemheader,.chatdetail-containerbodyitemcontent{
+	background:#fff;
+	float: left;
+	margin: 0 0.32rem;
+}
+.chatdetail-containerbody li.chatdetailcontainerbodyitemme .chatdetail-containerbodyitemheader{
+	float: right;
+	margin: 0 size(16) 0 size(6);
+}
+.chatdetail-containerbody li.chatdetailcontainerbodyitemme .chatdetail-containerbodyitemcontent{
+	float: right;
+	margin: 0 0.32rem;
+	background:#fef5bb;
+}
+.chatdetail-containerbody .chatdetail-containerbodyitemtime{
+	display: block;
+	text-align: center;
+	width: 4rem;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 0.21rem;
+	@include font-dpr(14px);
+}
+.chatdetail-containerbody .chatdetail-containerbodyitemheader{
+	width: 1.09rem;
+	height: 1.09rem;
+	border-radius: 0.55rem;
+}
+.chatdetail-container .chatdetail-containerfootertool{
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	min-height: 1.28rem;
+	width: 100%;
+	text-align: left;
+}
+.chatdetail-container .chatdetail-containerfooter{
+	width: 100%;
+	height: 1.28rem;
+	@include font-dpr(14px);
+	text-align: left;
+	background: #fff;
+	border-bottom:1px solid #f6f6f6;
+}
+.chatdetail-container .chatdetail-containerfooter div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.chatdetail-container .chatdetail-containerfooter input{
+	position: absolute;
+	width:size(250);
+	height:size(32);
+	background:#efefef;
+	border-radius:0.05rem;
+	left:size(35);
+	top: 0.21rem;
+	border:0px;
+	padding-right: 0.9rem;
+	@include font-dpr(14px);
+}
+.chatdetail-container .chatdetail-containerfooter img{
+	width: 0.53rem;
+	height: 0.53rem;
+}
+.chatdetail-container .chatdetail-containerfooter .chatdetail-containertool_icon{
+	position: absolute;
+	left: 8rem;
+	top: 0.4rem;
+}
+.chatdetail-container .chatdetail-containerfooter .chatdetail-containertool_add{
+	position: absolute;
+	left: 0.32rem;
+	top: 0.4rem;
+}
+.chatdetail-container .chatdetail-containerfooter span{
+	position: absolute;
+	right: 0.12rem;
+	top: 0.3rem;
+	display: inline-block;
+	@include font-dpr(14px);
+	background: #77c4fe;
+	color: #fff;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	border-radius:0.1rem;
+	padding: 0.1rem 0.1rem;
+}
+.chatdetail-container .chatdetail-containertool{
+	width: 100%;
+	height: 2.42rem;
+	@include font-dpr(14px);
+	text-align: left;
+	background: #fff;
+}
+.chatdetail-container .chatdetail-containertool div{
+	display: inline-block;
+	position: relative;
+	width: 2.51rem;
+	height: 100%;
+}
+.chatdetail-container .chatdetail-containertool div img{
+	position: absolute;
+	left: 0.88rem;
+	top:0.56rem;
+	width: 0.64rem;
+	height: 0.64rem;
+}
+.chatdetail-container .chatdetail-containertool .chatdetail-containertool_photo{
+	width: 0.74rem;
+}
+.chatdetail-container .chatdetail-containertool div span{
+	position: absolute;
+	left: 0.88rem;
+	bottom: 0.51rem;
+}
+/*系统消息*/
+.system_container{
+	width: 100%;
+	height: 100%;
+	.bjbtn{position: fixed;right:size(20);top:size(5);color: #4f8ef5;@include font-dpr(14px);z-index: 8;}
+	.system_mes{
+		.system_ul{
+
+			.chat-containernoinfo{
+				width: size(140);
+				height: size(140);
+				margin-top: size(129);
+			}			
+		}
+		.system_li{
+			.system_time{
+				color: #666;
+				@include font-dpr(14px);
+				display: block;
+				height: size(20);
+				margin: size(16) 0 size(10);
+			}
+			.system_con_imgbtn{
+			    position: absolute;
+			    right: size(-5);
+			    top:size(-5);
+			    width:size(20);
+			    height: size(20);
+			}
+			.system_con{
+			    position: relative;
+				background: #fff;
+				border-radius: size(4);
+				width: size(344);
+				height: auto;
+				margin: 0 auto;
+				.system_con_title,.system_con_content{
+					text-align: left;
+					margin-left: size(14);
+					display: block;
+					width: size(320);
+				}
+				.system_con_title{
+					color: #333;
+					@include font-dpr(16px);
+					padding-top: size(10);
+				}
+				.system_con_content{
+					color: #666;
+					@include font-dpr(14px);
+					margin-top: size(6);
+					padding-bottom: size(9);
+				}
+			}
+		}
+	}
+}

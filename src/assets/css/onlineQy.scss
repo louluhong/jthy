@@ -1,0 +1,5 @@
+#onlineQy{font-family: 'PingFangSC-Regular';}
+.onlineQy_list li{width:size(220);height: size(220);margin: size(30) auto 0;background: #fff;padding: size(50) size(30) 0;box-sizing: border-box;border-radius: size(8);}
+.onlineQy_img{height: size(110);width:size(140);margin: 0 auto;border-bottom: size(0.5) solid #e5e5e5;}
+.onlineQy_img img{display: block;width:size(140);height: size(101);}
+.onlineQy_list li span{display: block;height: size(50);line-height: size(50);color: #333;@include font-dpr(16px);}

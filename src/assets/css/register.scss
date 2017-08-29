@@ -1,0 +1,66 @@
+@import 'base_common.scss';
+.register-container{background: #fff;width:100%;height: 100%;}
+.register-header {
+	background-image: url(../../assets/images/register_bg@2x.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-position: center;
+	height: size(200-55);
+	padding-top: size(55);
+
+	img {
+		width: size(70);
+		height: size(66);
+	}
+}
+h1 {
+	@include font-dpr(22px);
+	color: #47A6F8;
+	line-height: 1.36363636;
+	margin-top: size(19);
+}
+
+.register-form {
+	box-sizing: border-box;
+	width: 100%;
+	padding: size(48) size(12) 0;
+}
+.register-group {
+	margin-bottom: size(16);
+	overflow: hidden;
+
+	input {
+		display: block;
+		width: 100%;
+		height: size(46);
+		padding: size(11) size(16);
+		@include font-dpr(16px);
+		line-height: 1.375;
+		background-color: #f6f6f6;
+    	background-image: none;
+		border: none;
+		@include cal(border-radius, 6px);
+		outline: none;
+		box-sizing: border-box;
+	}
+	.code {
+		float: right;
+		@include font-dpr(16px);
+		line-height: 1.375;
+		color: #47a6f8;
+		height: size(46);
+		box-sizing: border-box;
+		padding: size(10) 0 0 size(10);
+		margin-left: size(10);
+	}
+	.register-input-wrap {
+		overflow: hidden;
+	}
+}
+.button-wrap {
+	padding-top: size(24);
+
+	button {
+		width: 100%;
+	}
+}
